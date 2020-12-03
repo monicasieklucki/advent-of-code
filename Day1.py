@@ -1,0 +1,15 @@
+
+f = open(r"C:\Users\User\Desktop\AOC\input\Day1.txt")
+
+numbers = []
+
+sum = 2020
+
+for line in f:
+    numbers.append(int(line))
+
+for n1 in numbers:
+    for n2 in numbers:
+        if (n1 + n2) == 2020:
+            print(n1 * n2)
+
